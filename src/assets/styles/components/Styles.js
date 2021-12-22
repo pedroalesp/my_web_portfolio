@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const breakpoints = {
+  phone: "320px",
+  tablet: "768px",
+  desk: "1024px",
+};
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -45,32 +51,55 @@ export const HeroIcon = styled.div`
 
 export const StyledNav = styled.nav`
   &:before {
-    content: "🐦";
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(25.5em - 5px);
+    left: calc(50% - -7px);
+    width: 1.5px;
+    height: calc(5em + -9px);
+    background: #ffffff;
   }
 
   display: flex;
-  margin-top: 2em;
+  margin-top: 3.5em;
+  margin-left: 1px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  min-height: 80px;
 
   ul {
     margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1.5px solid #fff;
+    overflow: hidden;
+    border-radius: 5px;
 
     li {
+      &:first-child {
+        border-left: none;
+      }
+
+      &:hover {
+        background-color: #2ec4b6;
+        transition-duration: 0.3s;
+      }
+
       display: inline-block;
-      border: 1.5px solid #fff;
       font-family: "Oswald";
       font-size: 1.5em;
+      border-left: 1.5px solid #fff;
+      padding: 7px 0;
 
       a {
         color: #fff;
         text-decoration: none;
         cursor: pointer;
-        padding: 1.2em 1.5em 3em 1.55em;
+        padding: 0 1.4em 0 1.54em;
       }
     }
   }
