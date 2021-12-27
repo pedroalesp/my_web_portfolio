@@ -3,13 +3,13 @@ import React from "react";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 
-import { Container } from "../assets/styles/components/Styles";
+import { ContainerHome } from "../assets/styles/components/Styles";
 
 const Home = () => (
-  <Container>
+  <ContainerHome>
     <Hero />
-    <Nav />
-  </Container>
+    <Nav isHome={true} />
+  </ContainerHome>
 );
 
 export default Home;

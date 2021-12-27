@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import { StyledNav } from "../assets/styles/components/Styles";
 
-const Nav = () => (
-  <StyledNav>
+const Nav = ({ isHome }) => (
+  <StyledNav show={isHome ? true : null}>
     <ul>
       <li>
-        <Link to="/">About</Link>
+        <Link to="/about">About</Link>
       </li>
       <li>
         <Link to="/">Projects</Link>

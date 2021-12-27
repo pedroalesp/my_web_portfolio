@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const breakpoints = {
-  phone: `(max-width: 320px)`,
+  phone: `(max-width: 321px)`,
   big_phone: `(max-width: 480px)`,
-  tablet: `(max-width: 768px)`,
-  desk: `(max-width: 1024px)`,
+  tablet: `(max-width: 769px)`,
+  desk: `(max-width: 1025px)`,
 };
 
-export const Container = styled.div`
+export const ContainerHome = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,12 +15,6 @@ export const Container = styled.div`
 `;
 
 export const StyledHero = styled.section`
-  @media ${breakpoints.big_phone} {
-    padding: 4em 0 15px;
-  }
-  @media ${breakpoints.phone} {
-    padding: 4em 0 15px;
-  }
   width: fit-content;
   display: flex;
   align-items: center;
@@ -29,6 +23,13 @@ export const StyledHero = styled.section`
   padding: 4em 3.8em 15px;
   border-bottom: 1.5px solid #fff;
   padding-bottom: 15px;
+
+  @media ${breakpoints.big_phone} {
+    padding: 4em 0 15px;
+  }
+  @media ${breakpoints.phone} {
+    padding: 4em 0 15px;
+  }
 
   h1 {
     font-size: 5em;
@@ -77,10 +78,16 @@ export const HeroIcon = styled.div`
 `;
 
 export const StyledNav = styled.nav`
+  display: flex;
+  margin: 3.5em 1px 0 1.5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 80px;
 
   &:before {
     content: "";
-    display: block;
+    display: ${({ show }) => (show ? "block" : "none")} ;
     position: absolute;
     top: calc(25.5em - 5px);
     left: calc(50% - -7px);
@@ -89,72 +96,80 @@ export const StyledNav = styled.nav`
     background: #ffffff;
   }
 
-  display: flex;
-  margin: 3.5em 1px 0 1.5px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  min-height: 80px;
-
-  @media ${breakpoints.big_phone} {
-    flex-direction: column;
+  @media ${breakpoints.tablet} {
     &:before {
-    top: calc(21.5em - 7px);
-    left: calc(50% - -5px);
-    height: calc(4em + -6px);
+      flex-direction: column;
+      top: calc(23.5em - 8px);
+      height: calc(5em + -5px);
     }
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1.5px solid #fff;
-    overflow: hidden;
-    border-radius: 5px;
-
-    @media ${breakpoints.big_phone} {
-      flex-direction: column;
+  @media ${breakpoints.big_phone} {
+    &:before {
+      top: calc(21.5em - 7px);
+      left: calc(50% - -5px);
+      height: calc(4em + -6px);
     }
+  }
 
-    li {
-      &:first-child {
-        border-left: none;
-      }
+  @media ${breakpoints.phone} {
+    &:before {
+      top: calc(23.5em - 9px);
+      height: calc(4em + -8px);
+    }
+  }
 
-      &:hover {
-        background-color: #2ec4b6;
-        transition-duration: 0.3s;
-      }
-
-      display: inline-block;
-      font-family: "Oswald";
-      font-size: 1.5em;
-      border-left: 1.5px solid #fff;
-      padding: 7px 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: ${({ show }) => (show ? "1.5px solid #fff" : "none")};
+      overflow: hidden;
+      border-radius: 5px;
 
       @media ${breakpoints.big_phone} {
-        &:first-child {
-          border-top: none;
-          padding: 7px 10px;
-        }
-        &:nth-child(3) {
-          padding: 7px 16px;
-        }
-        &:nth-child(4) {
-          padding: 7px 1px;
-        }
-        border-left: 0px;
-        border-top: 1.5px solid #fff;
+        flex-direction: column;
       }
 
-      a {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-        padding: 0 1.4em 0 1.54em;
+      li {
+        display: inline-block;
+        font-family: "Oswald";
+        font-size: 1.5em;
+        border-left: ${({ show }) => (show ? "1.5px solid #fff" : "none")};
+        padding: 7px 0;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:hover {
+          background-color: #2ec4b6;
+          transition-duration: 0.3s;
+        }
+
+        @media ${breakpoints.big_phone} {
+          &:first-child {
+            border-top: none;
+            padding: 7px 10px;
+          }
+          &:nth-child(3) {
+            padding: 7px 16px;
+          }
+          &:nth-child(4) {
+            padding: 7px 1px;
+          }
+          border-left: 0px;
+          border-top: 1.5px solid #fff;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+          padding: ${({ show }) =>
+            show ? "0 1.4em 0 1.54em" : "0 0.39em 0 1.54em"};
         }
       }
     }
