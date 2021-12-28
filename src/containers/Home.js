@@ -8,7 +8,7 @@ import { ContainerHome } from "../assets/styles/components/Styles";
 const Home = () => (
   <ContainerHome>
     <Hero />
-    <Nav isHome={true} />
+    <Nav />
   </ContainerHome>
 );
 

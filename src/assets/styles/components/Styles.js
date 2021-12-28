@@ -87,7 +87,7 @@ export const StyledNav = styled.nav`
 
   &:before {
     content: "";
-    display: ${({ show }) => (show ? "block" : "none")} ;
+    display: block;
     position: absolute;
     top: calc(25.5em - 5px);
     left: calc(50% - -7px);
@@ -125,7 +125,7 @@ export const StyledNav = styled.nav`
       display: flex;
       align-items: center;
       justify-content: center;
-      border: ${({ show }) => (show ? "1.5px solid #fff" : "none")};
+      border: 1.5px solid #fff;
       overflow: hidden;
       border-radius: 5px;
 
@@ -137,7 +137,7 @@ export const StyledNav = styled.nav`
         display: inline-block;
         font-family: "Oswald";
         font-size: 1.5em;
-        border-left: ${({ show }) => (show ? "1.5px solid #fff" : "none")};
+        border-left: 1.5px solid #fff;
         padding: 7px 0;
 
         &:first-child {
@@ -168,10 +168,129 @@ export const StyledNav = styled.nav`
           color: #fff;
           text-decoration: none;
           cursor: pointer;
-          padding: ${({ show }) =>
-            show ? "0 1.4em 0 1.54em" : "0 0.39em 0 1.54em"};
+          padding: 0 1.4em 0 1.54em;
         }
       }
     }
+  }
+`;
+
+export const StyledNavBar = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+
+  img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 3em;
+    padding-right: 1em;
+    color: #ff9f1c;
+  }
+
+  @media ${breakpoints.big_phone} {
+    margin: 0 0 1em;
+    img {
+      margin: 10px 0 0 10px;
+      height: 35px;
+      width: 35px;
+    }
+    h2 {
+      font-size: 2em;
+      padding-right: 1em;
+    }
+  }
+`;
+
+export const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2em 4em 0;
+
+  @media ${breakpoints.phone} {
+    margin: 0;
+  }
+`;
+
+export const AboutContainerContent = styled.div`
+  display: flex;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 2em;
+
+  @media ${breakpoints.phone} {
+    flex-flow: wrap;
+    padding: 0 1em;
+  }
+`;
+
+export const AboutContainerPic = styled.div`
+  width: 1500px;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  @media ${breakpoints.phone} {
+    width: 250px;
+  }
+`;
+
+export const AboutContainerIntro = styled.div`
+  padding: 0 5em 0 4em;
+
+  h3 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  @media ${breakpoints.phone} {
+    padding: 0;
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+`;
+
+export const DownloadButton = styled.div`
+  width: fit-content;
+  padding: 17px 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  background-color: #2ec4b6;
+  border-radius: 10px;
+  color: #fff;
+
+  @media ${breakpoints.phone} {
+    padding: 12px 20px;
+    margin-left: 10%;
+    font-size: 1em;
+  }
+`;
+
+export const AboutContainerEpiloge = styled.div`
+  p {
+    font-size: 1.5em;
+    &:first-child {
+      border-bottom: 1.5px solid #fff;
+      padding-bottom: 1.5em;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #2ec4b6;
   }
 `;
