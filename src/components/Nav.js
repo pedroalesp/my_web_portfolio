@@ -10,13 +10,15 @@ const Nav = () => (
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/">Projects</Link>
+        <Link to="/projects">Projects</Link>
       </li>
       <li>
-        <Link to="/">Blog</Link>
+        <a href="https://blog.devbypedro.com/" target="_blank">
+          Blog
+        </a>
       </li>
       <li>
-        <Link to="/">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </li>
     </ul>
   </StyledNav>

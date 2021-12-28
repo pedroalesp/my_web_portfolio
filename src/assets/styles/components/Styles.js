@@ -213,7 +213,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   margin: 2em 4em 0;
 
-  @media ${breakpoints.phone} {
+  @media ${breakpoints.big_phone} {
     margin: 0;
   }
 `;
@@ -223,9 +223,9 @@ export const AboutContainerContent = styled.div`
   border-bottom: 1.5px solid #fff;
   padding-bottom: 2em;
 
-  @media ${breakpoints.phone} {
+  @media ${breakpoints.big_phone} {
     flex-flow: wrap;
-    padding: 0 1em;
+    padding: 0 1em 1em;
   }
 `;
 
@@ -236,6 +236,11 @@ export const AboutContainerPic = styled.div`
     width: 100%;
     border-radius: 5px;
   }
+
+  @media ${breakpoints.tablet} {
+    width: 1066px;
+  }
+
   @media ${breakpoints.phone} {
     width: 250px;
   }
@@ -254,11 +259,19 @@ export const AboutContainerIntro = styled.div`
     text-decoration: none;
   }
 
-  @media ${breakpoints.phone} {
-    padding: 0;
+  @media ${breakpoints.tablet} {
+    padding: 0 1em 0 1em;
     h3 {
       font-size: 1.5em;
     }
+    p {
+      font-size: 1em;
+    }
+  }
+
+  @media ${breakpoints.big_phone} {
+    padding: 0;
+
     p {
       font-size: 0.9em;
     }
@@ -274,10 +287,19 @@ export const DownloadButton = styled.div`
   border-radius: 10px;
   color: #fff;
 
-  @media ${breakpoints.phone} {
-    padding: 12px 20px;
-    margin-left: 10%;
+  @media ${breakpoints.tablet} {
+    padding: 13px 15px;
     font-size: 1em;
+  }
+
+  @media ${breakpoints.big_phone} {
+    padding: 12px 20px;
+    margin-left: 17%;
+    font-size: 1em;
+  }
+
+  @media ${breakpoints.phone} {
+    margin-left: 10%;
   }
 `;
 
@@ -292,5 +314,19 @@ export const AboutContainerEpiloge = styled.div`
   a {
     text-decoration: none;
     color: #2ec4b6;
+  }
+
+  @media ${breakpoints.tablet} {
+    p {
+      font-size: 1em;
+    }
+  }
+
+  @media ${breakpoints.big_phone} {
+    padding: 0 1em;
+
+    p {
+      font-size: 0.9em;
+    }
   }
 `;
