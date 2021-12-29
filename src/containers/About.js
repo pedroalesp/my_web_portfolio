@@ -5,12 +5,12 @@ import NavBar from "../components/NavBar";
 import AboutContent from "../components/AboutContent";
 
 import {
-  AboutContainer,
+  Container,
   AboutContainerEpiloge,
 } from "../assets/styles/components/Styles";
 
 const About = () => (
-  <AboutContainer>
+  <Container>
     <NavBar>
       <h2>About Me</h2>
     </NavBar>
@@ -35,7 +35,7 @@ const About = () => (
         </Link>
       </p>
     </AboutContainerEpiloge>
-  </AboutContainer>
+  </Container>
 );
 
 export default About;

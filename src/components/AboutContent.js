@@ -6,7 +6,7 @@ import {
   AboutContainerPic,
   AboutContainerContent,
   AboutContainerIntro,
-  DownloadButton,
+  Button,
 } from "../assets/styles/components/Styles";
 
 const AboutContent = () => (
@@ -35,7 +35,7 @@ const AboutContent = () => (
         href="../assets/FullStack_Dev.pdf"
         download="FullStack_Dev_Pedro_Silva.pdf"
       >
-        <DownloadButton>👉Download my CV</DownloadButton>
+        <Button>👉Download my CV</Button>
       </a>
     </AboutContainerIntro>
   </AboutContainerContent>
