@@ -78,17 +78,18 @@ const Projects = () => (
       <ProjectInfo>
         <h3>My Web Portfolio</h3>
         <p>
-          A movies blog (original content) made with{" "}
+          <strong>You are looking at it!</strong> 👀 I made this website as a
+          Single Page App using{" "}
+          <strong>React.js, React Router and Styled Components </strong>
+          <br /> It was{" "}
           <strong>
-            React.js, server side rendering with Gatsby.js and stylized with
-            Styled Components
-          </strong>{" "}
-          . <br />I used Ghost as CMS and
-          <strong> queried the posts data via GraphQl</strong>.
+            designed by myself using Figma. <br />
+          </strong>
+          I wanted to try my skills and show my projects 🤘{" "}
         </p>
         <div>
-          <a href="/" target="_blank">
-            <Button>🚀 Launch project</Button>
+          <a href="/">
+            <Button>⚡You're looking at it</Button>
           </a>
           <a href="/" target="_blank">
             <strong>View code↗</strong>

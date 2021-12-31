@@ -419,3 +419,7 @@ export const ProjectInfo = styled.div`
     }
   }
 `;
+
+export const ContactContaier = styled.section`
+  display: flex;
+`;

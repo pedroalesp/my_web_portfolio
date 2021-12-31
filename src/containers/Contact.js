@@ -1,5 +1,20 @@
 import React from "react";
 
-const Contact = () => <h1>xdddd</h1>;
+import { Container, ContactContaier } from "../assets/styles/components/Styles";
+import NavBar from "../components/NavBar";
+import ContactData from "../components/ContactData";
+import Form from "../components/Form";
+
+const Contact = () => (
+  <Container>
+    <NavBar>
+      <h2>Contact</h2>
+    </NavBar>
+    <ContactContaier>
+      <ContactData />
+      <Form />
+    </ContactContaier>
+  </Container>
+);
 
 export default Contact;
