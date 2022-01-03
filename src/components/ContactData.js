@@ -11,36 +11,37 @@ import instagram from "../assets/static/instagram.png";
 const ContactData = () => (
   <ContactDataContainer>
     <h2>Let's get in touch!</h2>
-    <a>
+    <a href={`mailto:me@devbypedro.com`} rel="noreferrer">
       <div>
-        <img src={email} />
+        <img src={email} alt="Mail icon" />
         me@devbypedro.com
       </div>
     </a>
     <a
       href="https://linkedin.com/in/pedro-alejandro-silva-perez"
       target="_blank"
+      rel="noreferrer"
     >
       <div>
-        <img src={linkedin} />
+        <img src={linkedin} alt="LinkedIn icon" />
         Pedro Alejandro Silva Perez
       </div>
     </a>
-    <a href="https://github.com/pedroalesp" target="_blank">
+    <a href="https://github.com/pedroalesp" target="_blank" rel="noreferrer">
       <div>
-        <img src={github} />
+        <img src={github} alt="Github icon" />
         pedroalesp
       </div>
     </a>
-    <a href="https://twitter.com/devbypedro" target="_blank">
+    <a href="https://twitter.com/devbypedro" target="_blank" rel="noreferrer">
       <div>
-        <img src={twitter} />
+        <img src={twitter} alt="Twitter icon" />
         @devbypedro
       </div>
     </a>
-    <a href="https://instagram.com/devbypedro" target="_blank">
+    <a href="https://instagram.com/devbypedro" target="_blank" rel="noreferrer">
       <div>
-        <img src={instagram} />
+        <img src={instagram} alt="Instagram icon" rel="noreferrer" />
         @devbypedro
       </div>
     </a>

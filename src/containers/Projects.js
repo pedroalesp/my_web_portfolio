@@ -34,10 +34,18 @@ const Projects = () => (
           a <strong>search engine</strong> with <strong> React Hooks</strong>.
         </p>
         <div>
-          <a href="https://pedroalesp.github.io/react-dex/" target="_blank">
+          <a
+            href="https://pedroalesp.github.io/react-dex/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button>🚀 Launch project</Button>
           </a>
-          <a href="https://github.com/pedroalesp/react-dex" target="_blank">
+          <a
+            href="https://github.com/pedroalesp/react-dex"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>View code↗</strong>
           </a>
         </div>
@@ -59,12 +67,17 @@ const Projects = () => (
           <strong> queried the posts data via GraphQl</strong>.
         </p>
         <div>
-          <a href="https://coffeenmovies.netlify.app/" target="_blank">
+          <a
+            href="https://coffeenmovies.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button>🚀 Launch project</Button>
           </a>
           <a
             href="https://github.com/pedroalesp/coffe-n-movies-blog"
             target="_blank"
+            rel="noreferrer"
           >
             <strong>View code↗</strong>
           </a>
@@ -94,6 +107,7 @@ const Projects = () => (
           <a
             href="https://github.com/pedroalesp/my_web_portfolio"
             target="_blank"
+            rel="noreferrer"
           >
             <strong>View code↗</strong>
           </a>

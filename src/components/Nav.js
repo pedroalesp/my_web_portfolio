@@ -13,7 +13,7 @@ const Nav = () => (
         <Link to="/projects">Projects</Link>
       </li>
       <li>
-        <a href="https://blog.devbypedro.com/" target="_blank">
+        <a href="https://blog.devbypedro.com/" target="_blank" rel="noreferrer">
           Blog
         </a>
       </li>
