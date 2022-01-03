@@ -22,7 +22,7 @@ const About = () => (
           <strong>check out my latest projects↗ </strong>
         </Link>{" "}
         to see what I’ve been learning or
-        <a href="https://blog.devbypedro.com/" target="_blank">
+        <a href="https://blog.devbypedro.com/" target="_blank" rel="noreferrer">
           <strong> take a look to my blog↗ </strong>
         </a>{" "}
         to see what I’m interested in 👀
