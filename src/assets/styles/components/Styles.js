@@ -533,9 +533,14 @@ export const StyledBanner = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 5em;
 
   div {
-    width: 210px;
+    width: 180px;
+
+    @media ${breakpoints.big_phone} {
+      width: 130px;
+    }
 
     img {
       width: 100%;
@@ -543,8 +548,17 @@ export const StyledBanner = styled.div`
   }
 
   h3 {
+    font-size: 3.5em;
     span {
       color: #ed2656;
+    }
+
+    @media ${breakpoints.big_phone} {
+      font-size: 2.8em;
+    }
+
+    h4 {
+      font-size: 1.5em;
     }
   }
 `;
