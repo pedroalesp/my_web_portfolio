@@ -422,4 +422,108 @@ export const ProjectInfo = styled.div`
 
 export const ContactContaier = styled.section`
   display: flex;
+  justify-content: space-around;
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  @media ${breakpoints.tablet} {
+    flex-direction: column;
+
+  @media ${breakpoints.big_phone} {
+    margin: 0 15px;
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+`;
+
+export const ContactDataContainer = styled.div`
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 1.3em;
+
+      @media ${breakpoints.big_phone} {
+        margin: 5px 0;
+        font-size: 1.1em;
+      }
+
+      img {
+        width: 30px;
+        margin-right: 5px;
+
+        @media ${breakpoints.big_phone} {
+          width: 25px;
+        }
+      }
+    }
+  }
+`;
+
+export const FormContainer = styled.div`
+  width: 450px;
+
+  @media ${breakpoints.tablet} {
+    margin-top: 30px;
+  }
+
+  @media ${breakpoints.big_phone} {
+    width: auto;
+  }
+`;
+
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", "Open-Sans";
+
+  input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    outline: none;
+    height: 50px;
+
+    @media ${breakpoints.big_phone} {
+      font-size: 1.1em;
+    }
+  }
+
+  &:placeholder {
+    color: #fff;
+  }
+
+  a {
+    display: none;
+  }
+
+  button {
+    font-family: "Montserrat", "Open-Sans";
+    width: fit-content;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-size: 1.3em;
+    background-color: #2ec4b6;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+
+    @media ${breakpoints.big_phone} {
+      padding: 12px 25px;
+      font-size: 1.1em;
+    }
+  }
 `;
