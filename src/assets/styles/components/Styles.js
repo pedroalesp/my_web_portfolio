@@ -527,3 +527,30 @@ export const StyledForm = styled.form`
     }
   }
 `;
+
+export const StyledBanner = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 210px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    span {
+      color: #ed2656;
+    }
+  }
+`;
+
+export const SyledFooter = styled.footer`
+  display: table;
+  text-align: center;
+  margin: 3% auto 0;
+`;
