@@ -32,8 +32,9 @@ const AboutContent = () => (
         <strong>Copywriting and UX Writing skills </strong>✍
       </p>
       <a
-        href="../assets/FullStack_Dev.pdf"
-        download="FullStack_Dev_Pedro_Silva.pdf"
+        href="https://drive.google.com/file/d/1CQycyb1SSB-7nTyDveyHrCrM4r0OfqK-/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
       >
         <Button>👉Download my CV</Button>
       </a>
