@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { ChangeAnimation } from "./Animations";
+
 const breakpoints = {
   phone: `(max-width: 321px)`,
   big_phone: `(max-width: 480px)`,
@@ -568,3 +570,34 @@ export const SyledFooter = styled.footer`
   text-align: center;
   margin: 3% auto 0;
 `;
+
+export const StyledAnimatedDescription = styled.div`
+  height: 55px;
+  overflow: hidden;
+  font-size: 3em;
+
+  @media ${breakpoints.big_phone} {
+    font-size: 2em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    -webkit-animation-name: ${ChangeAnimation};
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: ${ChangeAnimation};
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    li {
+      line-height: 55px;
+      margin: 0;
+    }
+  }
+`;
+
+// change

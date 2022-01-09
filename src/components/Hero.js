@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StyledHero, HeroIcon } from "../assets/styles/components/Styles";
+import AnimatedDescription from "./AnimatedDescription";
 
 import clone from "../assets/static/clone.svg";
 
@@ -13,8 +14,7 @@ const Hero = () => (
     <h1>
       I’m <span>Pedro Silva</span>
     </h1>
-    <h2>Frontend Dev, Backend Dev,</h2>
-    <h2>Copywriter, Jedi Knight</h2>
+    <AnimatedDescription />
   </StyledHero>
 );
 
