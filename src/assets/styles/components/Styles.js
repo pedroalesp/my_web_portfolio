@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { ChangeAnimation } from "./Animations";
+import { ChangeAnimation } from "./Animations.js";
 
 const breakpoints = {
   phone: `(max-width: 321px)`,
