@@ -2,8 +2,10 @@ import React from "react";
 
 import { StyledAnimatedDescription } from "../assets/styles/components/Styles";
 
+import sable from "../assets/static/sable.png";
+
 const AnimatedDescription = () => (
-  <StyledAnimatedDescription>
+  <StyledAnimatedDescription background={sable}>
     <ul>
       <li>Frontend Dev</li>
       <li>Backend Dev</li>

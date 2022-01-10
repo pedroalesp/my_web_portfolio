@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ChangeAnimation from "./Animations";
+import { ChangeAnimation, OpacityAnimation } from "./Animations";
 
 const breakpoints = {
   phone: `(max-width: 321px)`,
@@ -47,21 +47,6 @@ export const StyledHero = styled.section`
     }
   }
 
-  h2 {
-    font-family: "Montserrat";
-    font-size: 2em;
-
-    @media ${breakpoints.tablet} {
-      font-size: 1.7em;
-    }
-    @media ${breakpoints.phone} {
-      font-size: 1.5em;
-    }
-    @media ${breakpoints.big_phone} {
-      font-size: 1.5em;
-    }
-  }
-
   h3 {
     font-size: 1.5em;
   }
@@ -91,7 +76,7 @@ export const StyledNav = styled.nav`
     content: "";
     display: block;
     position: absolute;
-    top: calc(25.5em - 5px);
+    top: calc(24.5em - 12px);
     left: calc(50% - -7px);
     width: 1.5px;
     height: calc(5em + -9px);
@@ -101,14 +86,15 @@ export const StyledNav = styled.nav`
   @media ${breakpoints.tablet} {
     &:before {
       flex-direction: column;
-      top: calc(23.5em - 8px);
+      top: calc(22.5em - 2px);
       height: calc(5em + -5px);
+      left: calc(50% - -7px);
     }
   }
 
   @media ${breakpoints.big_phone} {
     &:before {
-      top: calc(21.5em - 7px);
+      top: calc(21.3em - 8px);
       left: calc(50% - -5px);
       height: calc(4em + -6px);
     }
@@ -116,7 +102,7 @@ export const StyledNav = styled.nav`
 
   @media ${breakpoints.phone} {
     &:before {
-      top: calc(23.5em - 9px);
+      top: calc(21.5em - 10px);
       height: calc(4em + -8px);
     }
   }
@@ -140,7 +126,7 @@ export const StyledNav = styled.nav`
         font-family: "Oswald";
         font-size: 1.5em;
         border-left: 1.5px solid #fff;
-        padding: 7px 0;
+        padding: 8px 0;
 
         &:first-child {
           border-left: none;
@@ -576,6 +562,60 @@ export const StyledAnimatedDescription = styled.div`
   overflow: hidden;
   font-size: 3em;
 
+  &:before {
+    content: " ";
+    background: ${(props) => `url(${props.background}) no-repeat`};
+    left: 8.5em;
+
+    @media ${breakpoints.tablet} {
+      left: 3.4em;
+    }
+    @media ${breakpoints.big_phone} {
+      left: 1.4em;
+    }
+    @media ${breakpoints.phone} {
+      left: 0.5em;
+    }
+  }
+
+  &:after {
+    content: " ";
+    background: ${(props) => `url(${props.background}) no-repeat`};
+    right: 8.5em;
+
+    @media ${breakpoints.tablet} {
+      right: 3.4em;
+    }
+    @media ${breakpoints.big_phone} {
+      right: 1.3em;
+    }
+    @media ${breakpoints.phone} {
+      right: 0.4em;
+    }
+  }
+
+  &:before,
+  &:after {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 6.5em;
+    transform: rotate(-45deg);
+    -webkit-animation-name: ${OpacityAnimation};
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: ${OpacityAnimation};
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    @media ${breakpoints.tablet} {
+      top: 6em;
+    }
+    @media ${breakpoints.big_phone} {
+      top: 8.3em;
+    }
+  }
+
   @media ${breakpoints.big_phone} {
     font-size: 2em;
   }
@@ -585,7 +625,6 @@ export const StyledAnimatedDescription = styled.div`
     margin: 0;
     padding: 0;
     text-align: center;
-
     -webkit-animation-name: ${ChangeAnimation};
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;

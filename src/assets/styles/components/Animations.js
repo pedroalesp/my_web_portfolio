@@ -1,6 +1,6 @@
 import { keyframes } from "styled-components";
 
-const ChangeAnimation = keyframes`
+export const ChangeAnimation = keyframes`
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
   33.32%,45.98% {transform:translate3d(0,-50%,0);}
@@ -9,4 +9,6 @@ const ChangeAnimation = keyframes`
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 `;
 
-export default ChangeAnimation;
+export const OpacityAnimation = keyframes`
+0%, 100% {opacity:0;}
+50% {opacity:1;}`;
