@@ -12,3 +12,25 @@ export const ChangeAnimation = keyframes`
 export const OpacityAnimation = keyframes`
 0%, 100% {opacity:0;}
 50% {opacity:1;}`;
+
+export const SlideInUp = keyframes`
+from {
+  transform: translateY(100%);
+  opacity: 0;
+}
+to {
+  opacity: 1;
+  transform: translateY(0%);
+}
+`;
+
+export const FadeIn = keyframes`
+from {
+
+  opacity: 0;
+}
+to {
+  opacity: 1;
+
+}
+`;

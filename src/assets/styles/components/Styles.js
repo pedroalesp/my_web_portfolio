@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-import { ChangeAnimation, OpacityAnimation } from "./Animations";
+import {
+  ChangeAnimation,
+  OpacityAnimation,
+  SlideInUp,
+  FadeIn,
+} from "./Animations";
 
 const breakpoints = {
   phone: `(max-width: 321px)`,
@@ -35,6 +40,9 @@ export const StyledHero = styled.section`
 
   h1 {
     font-size: 5em;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-name: ${FadeIn};
 
     @media ${breakpoints.tablet} {
       font-size: 4em;
@@ -210,6 +218,9 @@ export const AboutContainerContent = styled.div`
   display: flex;
   border-bottom: 1.5px solid #fff;
   padding-bottom: 2em;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: ${SlideInUp};
 
   @media ${breakpoints.big_phone} {
     flex-flow: wrap;
@@ -324,6 +335,9 @@ export const ProjectsContent = styled.article`
   padding: 1.5em 0;
   margin: 0 1em;
   border-bottom: 1.5px solid #fff;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: ${SlideInUp};
 
   @media ${breakpoints.tablet} {
     flex-direction: column;
@@ -411,6 +425,9 @@ export const ProjectInfo = styled.div`
 export const ContactContaier = styled.section`
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: ${SlideInUp};
 
   h2 {
     font-size: 2.5em;
