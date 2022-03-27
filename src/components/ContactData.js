@@ -18,7 +18,7 @@ const ContactData = () => (
       </div>
     </a>
     <a
-      href="https://linkedin.com/in/pedro-alejandro-silva-perez"
+      href="https://linkedin.com/in/pedrosilvaperez"
       target="_blank"
       rel="noreferrer"
     >
