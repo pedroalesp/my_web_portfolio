@@ -8,7 +8,7 @@ const AnimatedDescription = () => (
   <StyledAnimatedDescription background={sable}>
     <ul>
       <li>Frontend Dev</li>
-      <li>Backend Dev</li>
+      <li>Python Padawan</li>
       <li>Copywriter</li>
       <li>Jedi Knight</li>
     </ul>
