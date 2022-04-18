@@ -32,7 +32,7 @@ const AboutContent = () => (
         <strong>Copywriting and UX Writing skills </strong>✍
       </p>
       <a
-        href="https://drive.google.com/file/d/1CQycyb1SSB-7nTyDveyHrCrM4r0OfqK-/view?usp=sharing"
+        href="https://drive.google.com/file/d/1wOUlP6K3CZ7jDGKXo_jcUd3JMz4ChNig/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
